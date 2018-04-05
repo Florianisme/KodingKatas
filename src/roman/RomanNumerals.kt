@@ -1,3 +1,5 @@
+package roman
+
 private val map = mapOf(
         'I' to 1,
         'V' to 5,

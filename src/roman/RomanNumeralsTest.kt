@@ -1,3 +1,5 @@
+package roman
+
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 
@@ -17,5 +19,4 @@ internal class RomanNumeralsTest {
     fun toNumeral_variation() {
         assertEquals(796, toNumeral("DCCXCVI"))
     }
-
 }
