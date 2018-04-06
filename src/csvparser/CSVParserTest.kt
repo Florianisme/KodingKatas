@@ -14,6 +14,14 @@ internal class CSVParserTest {
                 parse("Name;Strasse;Ort;Alter\n" +
                         "Peter Pan;Am Hang 5;12345 Einsam;42\n" +
                         "Maria Schmitz;Kölner Straße 45;50123 Köln;43\n" +
-                        "Paul Meier;Münchener Weg 1;87654 München;65"))
+                        "Paul Meier;Münchener Weg 1;87654 München;65").toString())
+    }
+
+    @Test
+    fun parse_print() {
+        assertEquals("", printList(parse("Name;Strasse;Ort;Alter\n" +
+                "Peter Pan;Am Hang 5;12345 Einsam;42\n" +
+                "Maria Schmitz;Kölner Straße 45;50123 Köln;43\n" +
+                "Paul Meier;Münchener Weg 1;87654 München;65")))
     }
 }
